@@ -1,0 +1,75 @@
+.userDiv {
+  position: sticky;
+  top: 0;
+
+  height: 200px;        /* increased height */
+  background: black;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+  z-index: 1000;
+}
+
+.computerDiv {
+  position: sticky;
+  top: 0;
+
+  height: 200px;        /* increased height */
+  background: yellow;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+  z-index: 1000;
+}
+
+#resultDiv {
+  position: fixed;
+  bottom: 0;     /* 👈 stick to bottom */
+  left: 0;
+  width: 100%;
+
+  height: 120px;
+  background: green;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+  z-index: 1000;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;   /* center the row */
+  gap: 20px;                 /* space between images */
+  flex-wrap: wrap;           /* wrap on smaller screens */
+}
+
+.image-row img {
+  width: 30%;   /* makes them fit in one row */
+  height: auto;
+}
+
+.image-item img {
+  width: 100%;
+  max-width: 500px; /* limits size but can be bigger than before */
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.myChoice {
+  border: 3px solid red;
+  border-radius: 6px;
+}
+
